@@ -27,7 +27,7 @@ exports.addFileBook = async (req, res) => {
           translator: xlData[i].Tacgia,
           price: xlData[i].Dongia,
           categoryItems: [{ categoryId: cate._id }],
-          bookId: "BOOK-" + (count+i)
+          bookId: "BOOK-" + (count+ (i+1))
         });
       }
     }
